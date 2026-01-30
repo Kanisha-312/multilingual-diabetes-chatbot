@@ -1,10 +1,10 @@
-# Multilingual Diabetes Management Chatbot using RAG
+### Multilingual Diabetes Management Chatbot using RAG
 A retrieval-augmented, multilingual healthcare chatbot designed to provide diabetes-related guidance using trusted medical sources.
 The system combines LLMs, semantic retrieval, empathetic prompting, and multilingual translation to generate safe, context-aware, and supportive responses for patient-style queries.
 This is a graduate-level NLP project completed as part of the Natural Language Processing course at the University at Buffalo.
 ___
 
-## Project Motivation
+#### Project Motivation
 Diabetes management requires continuous education, lifestyle awareness, and emotional support.
 However, access to personalized, multilingual, and empathetic medical guidance is limited—especially in low-resource settings.
 This project explores how large language models (LLMs) combined with Retrieval-Augmented Generation (RAG) can help bridge this gap by:
