@@ -77,6 +77,7 @@ ___
 - **BERTScore (F1): 0.7873**
 - The system was evaluated on realistic patient-style queries across multiple languages.
 - Tested on English, Spanish, and French patient profiles
+  
 **Demonstrated:**
 - Strong multilingual understanding
 - Safety-first behavior
