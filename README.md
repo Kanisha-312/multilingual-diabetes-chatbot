@@ -81,47 +81,45 @@ These documents form the trusted clinical knowledge base used for retrieval-augm
 ___
 
 ## Evaluation
-The system was evaluated on realistic patient-style queries across multiple languages.
-BERTScore (F1): 0.7873
-(Indicates semantic relevance despite lexical variation)
-Qualitative Evaluation
-Tested on English, Spanish, and French patient profiles
-Demonstrated:
-Strong multilingual understanding
-Safety-first behavior
-Context-aware responses
-Conservative handling of medical advice
-Full experimental analysis and UI screenshots are available in the project report
+- The system was evaluated on realistic patient-style queries across multiple languages.
+**BERTScore (F1): 0.7873**
+- Tested on English, Spanish, and French patient profiles
+**Demonstrated:**
+- Strong multilingual understanding
+- Safety-first behavior
+- Context-aware responses
+- Conservative handling of medical advice
+- Full experimental analysis and UI screenshots are available in the project report
 
 ___
 
 ## Example Capabilities
-Answers lifestyle and diet questions safely
-Avoids unsafe medical recommendations
-Adapts tone and content based on patient context
-Handles multilingual input seamlessly
-Grounds responses in authoritative medical documents
+- Answers lifestyle and diet questions safely
+- Avoids unsafe medical recommendations
+- Adapts tone and content based on patient context
+- Handles multilingual input seamlessly
+- Grounds responses in authoritative medical documents
 ___
 
 ## Technology Stack
-Python
-PyTorch
-Hugging Face Transformers
-PEFT / LoRA
-FAISS
-Sentence Transformers
-BLOOMZ-3B
-Opus-MT (Multilingual Translation)
-Jupyter Notebook
+- Python
+- PyTorch
+- Hugging Face Transformers
+- PEFT / LoRA
+- FAISS
+- Sentence Transformers
+- BLOOMZ-3B
+- Opus-MT (Multilingual Translation)
+- Jupyter Notebook
 
 ---
 
 ## Future Work
-Multi-turn dialogue memory
-Improved empathetic response modeling
-Reinforcement learning from human feedback (RLHF)
-Better dialogue-specific evaluation metrics
-Expanded language support
+- Multi-turn dialogue memory
+- Improved empathetic response modeling
+- Reinforcement learning from human feedback (RLHF)
+- Better dialogue-specific evaluation metrics
+- Expanded language support
 
 ---
 
@@ -130,6 +128,6 @@ Expanded language support
 **Kanisha Raja**  
 Master’s in Artificial Intelligence, University at Buffalo
 
-**Sai Deshith Sandakacharla**
+**Sai Deshith Sandakacharla**  
 Master’s in Artificial Intelligence, University at Buffalo
 
