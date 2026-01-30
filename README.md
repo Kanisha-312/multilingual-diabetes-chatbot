@@ -27,6 +27,7 @@ Retrieved context is injected into the prompt before generation
 Empathetic & Personalized Prompting
 Patient attributes (age, glucose level, symptoms, medications)
 Safety-aware response design to avoid unsafe recommendations
+
 ___
 
 ## Datasets Used
@@ -43,27 +44,36 @@ All datasets were normalized into a JSONL conversational format suitable for ins
 ___
 
 ## Methodology
+
 **Fine-Tuning**
+
 - Framework: Hugging Face Transformers
 - Technique: Parameter-Efficient Fine-Tuning (LoRA)
 - Model: BLOOMZ-3B
 - Precision: FP16
 - Training Style: Instruction-based conversational formatting
+  
 **Retrieval-Augmented Generation (RAG)**
+
 - Embedding model: all-MiniLM-L6-v2
 - Index: FAISS
 - Top-k retrieval: 8 passages
 - Retrieved medical context appended to the prompt before generation
+  
 **Multilingual Support**
+
 - Translation pipelines using Helsinki-NLP Opus-MT
-Supported languages: English, Spanish, French
+- Supported languages: English, Spanish, French
+
 **Safety & Personalization**
-Conservative response design (no dosage prescriptions)
-Patient profile conditioning:
-Age
-Glucose level
-Symptoms
-Medications
+
+- Conservative response design (no dosage prescriptions)
+- Patient profile conditioning:
+- Age
+- Glucose level
+- Symptoms
+- Medications
+  
 ___
 
 ## Evaluation
@@ -78,6 +88,7 @@ Safety-first behavior
 Context-aware responses
 Conservative handling of medical advice
 Full experimental analysis and UI screenshots are available in the project report
+
 ___
 
 ## Example Capabilities
@@ -111,9 +122,10 @@ Expanded language support
 ---
 
 ## Authors
-**Kanisha Raja**
-M.S. Artificial Intelligence, University at Buffalo
+
+**Kanisha Raja**  
+Master’s in Artificial Intelligence, University at Buffalo
 
 **Sai Deshith Sandakacharla**
-M.S. Artificial Intelligence, University at Buffalo
+Master’s in Artificial Intelligence, University at Buffalo
 
