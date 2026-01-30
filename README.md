@@ -31,21 +31,25 @@ Safety-aware response design to avoid unsafe recommendations
 ___
 
 ## Datasets Used
-1. Medical Knowledge Sources (RAG Corpus)
-WHO – Management of Diabetes Mellitus: Standards of Care
-ADA – Standards of Care in Diabetes (2024)
-2. Training & Evaluation Data
-MedQuAD – Medical question–answer pairs (diabetes-filtered)
-MedicationQA (TrueHealth) – Drug-related Q&A
-MedQA (USMLE-style) – Clinical reasoning QA
-MedDialog-EN – Multi-turn medical dialogues
-Custom Synthetic QA – Author-created diabetes scenarios
-All datasets were normalized into a JSONL conversational format suitable for instruction tuning and evaluation.
-___
+
+### 1. Medical Knowledge Sources (RAG Corpus)
+- **WHO** – *Management of Diabetes Mellitus: Standards of Care*
+- **ADA** – *Standards of Care in Diabetes (2024)*
+
+### 2. Training & Evaluation Datasets
+- **MedQuAD** – Medical question–answer pairs (diabetes-filtered)
+- **MedicationQA (TrueHealth)** – Drug-related question answering
+- **MedQA** – USMLE-style clinical reasoning QA
+- **MedDialog-EN** – Multi-turn medical dialogue dataset
+- **Custom Synthetic QA** – Author-created diabetes-specific scenarios
+
+These documents form the trusted clinical knowledge base used for retrieval-augmented generation (RAG).
+
+---
 
 ## Methodology
 
-**Fine-Tuning**
+### **Fine-Tuning**
 
 - Framework: Hugging Face Transformers
 - Technique: Parameter-Efficient Fine-Tuning (LoRA)
@@ -53,19 +57,19 @@ ___
 - Precision: FP16
 - Training Style: Instruction-based conversational formatting
   
-**Retrieval-Augmented Generation (RAG)**
+### **Retrieval-Augmented Generation (RAG)**
 
 - Embedding model: all-MiniLM-L6-v2
 - Index: FAISS
 - Top-k retrieval: 8 passages
 - Retrieved medical context appended to the prompt before generation
   
-**Multilingual Support**
+### **Multilingual Support**
 
 - Translation pipelines using Helsinki-NLP Opus-MT
 - Supported languages: English, Spanish, French
 
-**Safety & Personalization**
+### **Safety & Personalization**
 
 - Conservative response design (no dosage prescriptions)
 - Patient profile conditioning:
