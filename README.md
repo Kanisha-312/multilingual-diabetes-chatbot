@@ -17,6 +17,12 @@ This project explores how large language models (LLMs) combined with Retrieval-A
 - Avoiding unsafe medical advice
 - Adapting responses to patient context (age, glucose level, symptoms, medications)
 
+---
+### 🎥 Short Demo Video
+
+🔗 **Watch the demo:**  
+[Multilingual Diabetes Chatbot – Video Demo](https://drive.google.com/file/d/1aFaVEWJ0wYZ6W0Poga5XFfPfdKWa369N/view?usp=sharing)
+
 ___
 
 ### Methodology
@@ -91,12 +97,6 @@ ___
 - Adapts tone and content based on patient context
 - Handles multilingual input seamlessly
 - Grounds responses in authoritative medical documents
-
----
-### 🎥 Short Demo Video
-
-🔗 **Watch the demo:**  
-[Multilingual Diabetes Chatbot – Video Demo](https://drive.google.com/file/d/1aFaVEWJ0wYZ6W0Poga5XFfPfdKWa369N/view?usp=sharing)
 
 ___
 
